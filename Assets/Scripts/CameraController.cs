@@ -5,10 +5,11 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [SerializeField]
-    GameObject camera;
+    GameObject cam;
     [SerializeField]
     GameObject player;
     void Update() {
-        camera.transform.position = new Vector3(player.transform.position.x, player.transform.position.y+3, player.transform.position.z-5);
+        //Code for following the player with the camera
+        cam.transform.position = new Vector3(player.transform.position.x, player.transform.position.y+3, player.transform.position.z-5);
     }
 }

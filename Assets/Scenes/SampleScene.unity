@@ -154,7 +154,7 @@ Rigidbody:
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -212,7 +212,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a38f09ef78c5b8c4f9daa0c1acd18295, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -271,6 +271,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerRB: {fileID: 299292203}
   moveSpeed: 2
+  startSpeed: 5
+  timer: 60
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,7 +472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ca9869dc50697143974832aefb148e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 963194225}
+  cam: {fileID: 963194225}
   player: {fileID: 299292202}
 --- !u!1001 &7951605343781299306
 PrefabInstance:
@@ -484,6 +486,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform
       objectReference: {fileID: 0}
+    - target: {fileID: 3889147565440165862, guid: fbd807af8b0b2ab4881a4372955c13f7, type: 3}
+      propertyPath: platforms.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3889147565440165862, guid: fbd807af8b0b2ab4881a4372955c13f7, type: 3}
+      propertyPath: platforms.Array.data[1]
+      value: 
+      objectReference: {fileID: 8665660450893979295}
     - target: {fileID: 8438706990798256241, guid: fbd807af8b0b2ab4881a4372955c13f7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -529,6 +539,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbd807af8b0b2ab4881a4372955c13f7, type: 3}
+--- !u!1 &8665660450893979295 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 434980216718396846, guid: fbd807af8b0b2ab4881a4372955c13f7, type: 3}
+  m_PrefabInstance: {fileID: 7951605343781299306}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
