@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerRB: {fileID: 299292203}
-  moveSpeed: 2
+  moveSpeed: 1.5
   startSpeed: 5
   timer: 60
 --- !u!1 &705507993
